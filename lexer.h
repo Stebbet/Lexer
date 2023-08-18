@@ -166,10 +166,6 @@ public:
         return false;
     }
 
-    int getLineNum(){
-        return lineNumber;
-    }
-
 private:
     std::ifstream input_stream;
     int lineNumber;
@@ -182,19 +178,16 @@ public:
 
     Tokenizer(FileInput* s);
 
-    const Token * getToken();
-
-    bool parse_line(); // FOR TESTING, PUT BACK INTO PRIVATE ONCE FINISHED
     bool parse_file();
 
-    const Token * peekToken();
-
 private:
-    unsigned int line_count;
+
     std::string current_line;
     FileInput* source;
 
     bool read_line();
+
+    bool parse_line();
 
     bool valid_number(int index);
 };

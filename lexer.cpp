@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Tokenizer::Tokenizer(FileInput *s) : line_count(0), source(s){}
+Tokenizer::Tokenizer(FileInput *s) : source(s){}
 
 bool Tokenizer::parse_line() {
     if (!read_line()) return false;

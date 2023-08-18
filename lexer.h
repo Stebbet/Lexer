@@ -166,6 +166,10 @@ public:
         return false;
     }
 
+    int getLineNum(){
+        return lineNumber;
+    }
+
 private:
     std::ifstream input_stream;
     int lineNumber;
@@ -176,7 +180,7 @@ class Tokenizer {
 public:
     std::vector<Token> tokens;
 
-    Tokenizer(FileInput* s);
+    explicit Tokenizer(FileInput* s);
 
     bool parse_file();
 

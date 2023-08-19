@@ -7,7 +7,17 @@ The goal of this project was to learn the basics of lexing and parsing
 ### Example usage diagram
 ![Logo](https://tomassetti.me/wp-content/uploads/2017/02/lexer-parser-center-1030x187.png)
 
-### Expected output from "input.txt"
+
+
+### Expected output:
+Input.txt
+```
+int a = 365;
+for (int i = 0; i < 50; i++){
+    print i;
+}
+```
+Output
 ```
 token_int - token_var : a - token_equals - token_num : 365 - token_semicolon - token_eol
 token_for - token_lparen - token_int - token_var : i - token_equals - token_num : 0 - token_semicolon - token_var : i -

@@ -22,7 +22,7 @@ Output
 token_int - token_var : a - token_equals - token_num : 365 - token_semicolon - token_eol
 token_for - token_lparen - token_int - token_var : i - token_equals - token_num : 0 - token_semicolon - token_var : i -
 token_num : 50 - token_semicolon - token_var : i - token_plus - token_plus - token_rparen - token_lcurly - token_eol
-token_str : "print" - token_var : i - token_semicolon - token_eol
+token_var : print - token_var : i - token_semicolon - token_eol
 token_rcurly - token_eol
 ```
 
